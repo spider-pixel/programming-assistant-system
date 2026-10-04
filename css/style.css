@@ -1,0 +1,566 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+.form-container {
+    width: 420px;
+    max-width: 90%;
+    margin: 70px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.form-container h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #222;
+    color: white;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.message {
+    padding: 10px;
+    background: #eee;
+    border-radius: 5px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 25px;
+    background: #222;
+}
+
+nav h2 {
+    color: white;
+    margin-right: auto;
+}
+
+nav a {
+    color: white;
+}
+
+main {
+    padding: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.1);
+}
+/* ============================= */
+/* CODE DEBUGGER */
+/* ============================= */
+
+.debugger-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.debugger-container select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.debugger-container textarea {
+    width: 100%;
+    min-height: 300px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Consolas, monospace;
+    font-size: 15px;
+    resize: vertical;
+}
+
+.debug-result {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f4f6f8;
+    border-radius: 8px;
+}
+
+.debug-result pre {
+    padding: 15px;
+    background: #222;
+    color: white;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+.ai-response {
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.ai-response pre {
+    background: #1e1e1e;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    text-align: left;
+    font-family: Consolas, monospace;
+}
+css
+/* =========================================
+   AI DEBUGGER - PROFESSIONAL RESULT UI
+   ========================================= */
+
+.debugger-page {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.debugger-intro {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+/* Debugger container */
+
+.debugger-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Labels */
+
+.debugger-container label {
+    display: block;
+    font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+
+/* Language select */
+
+#language {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    background: white;
+}
+
+
+/* Code textarea */
+
+#code {
+    width: 100%;
+    min-height: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 14px;
+
+    resize: vertical;
+
+    background: #f8f9fa;
+}
+
+
+/* Debug button */
+
+.debug-button {
+    margin-top: 18px;
+
+    padding: 13px 25px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.debug-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+
+/* Result area */
+
+.debug-result {
+    margin-top: 30px;
+}
+
+
+/* Result heading */
+
+.result-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+
+.result-heading h2 {
+    margin: 0;
+}
+
+
+/* Language badge */
+
+.language-badge {
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #e8f0fe;
+    color: #2563eb;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* AI sections */
+
+.ai-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.ai-section {
+    border: 1px solid #e1e5ea;
+    border-radius: 10px;
+    overflow: hidden;
+
+    background: white;
+}
+
+
+/* Section title */
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 15px 18px;
+
+    background: #f5f7fa;
+
+    border-bottom: 1px solid #e1e5ea;
+}
+
+
+.section-title h3 {
+    margin: 0;
+
+    font-size: 18px;
+}
+
+
+.section-icon {
+    font-size: 20px;
+}
+
+
+/* Section content */
+
+.section-content {
+    padding: 18px;
+
+    line-height: 1.7;
+
+    color: #333;
+}
+
+
+/* Corrected code */
+
+.code-container {
+    background: #1e1e1e;
+
+    padding: 20px;
+
+    overflow-x: auto;
+}
+
+
+.code-container pre {
+    margin: 0;
+
+    color: #f1f1f1;
+
+    font-family:
+        Consolas,
+        "Courier New",
+        monospace;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    white-space: pre-wrap;
+}
+
+
+.code-container code {
+    font-family: inherit;
+}
+
+
+/* Placeholder */
+
+.result-placeholder {
+    text-align: center;
+
+    padding: 50px 20px;
+
+    border: 2px dashed #d8dde5;
+
+    border-radius: 10px;
+
+    background: #fafbfc;
+}
+
+
+.placeholder-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+
+.result-placeholder h2 {
+    margin-bottom: 8px;
+}
+
+
+.result-placeholder p {
+    color: #777;
+}
+
+
+/* Loading */
+
+.loading-box {
+    text-align: center;
+
+    padding: 45px 20px;
+
+    border-radius: 10px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e1e5ea;
+}
+
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+
+    margin: 0 auto 15px;
+
+    border: 4px solid #ddd;
+
+    border-top: 4px solid #2563eb;
+
+    border-radius: 50%;
+
+    animation: debugger-spin 1s linear infinite;
+}
+
+
+@keyframes debugger-spin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* Error / warning messages */
+
+.debug-message {
+    padding: 20px;
+
+    border-radius: 10px;
+
+    margin-top: 20px;
+}
+
+
+.debug-message h2 {
+    margin-top: 0;
+}
+
+
+.debug-message.error {
+    background: #fff1f2;
+
+    border: 1px solid #fecdd3;
+
+    color: #991b1b;
+}
+
+
+.debug-message.warning {
+    background: #fffbeb;
+
+    border: 1px solid #fde68a;
+
+    color: #92400e;
+}
+
+
+/* Individual section emphasis */
+
+.errors-section .section-title {
+    background: #fff5f5;
+}
+
+
+.location-section .section-title {
+    background: #f5f8ff;
+}
+
+
+.explanation-section .section-title {
+    background: #fffaf0;
+}
+
+
+.corrected-section .section-title {
+    background: #f0fdf4;
+}
+
+
+.learning-section .section-title {
+    background: #faf5ff;
+}
+
+
+/* Mobile responsiveness */
+
+@media (max-width: 768px) {
+
+    .debugger-container {
+        padding: 20px;
+    }
+
+
+    .result-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+
+    #code {
+        min-height: 220px;
+    }
+
+}
+.dashboard-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
