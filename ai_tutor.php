@@ -1,4 +1,4 @@
-````php
+
 <?php
 
 require_once "includes/auth.php";
@@ -44,7 +44,7 @@ require_once "includes/auth.php";
 
     <div class="tutor-page">
 
-        <h1>🤖 AI Programming Tutor</h1>
+        <h1>AI Programming Tutor</h1>
 
         <p class="tutor-intro">
 
@@ -131,7 +131,7 @@ require_once "includes/auth.php";
                 onclick="askTutor()"
             >
 
-                🤖 Ask AI Tutor
+                 Ask AI Tutor
 
             </button>
 
@@ -147,7 +147,7 @@ require_once "includes/auth.php";
 
                     <div class="tutor-icon">
 
-                        🤖
+                        
 
                     </div>
 
@@ -235,7 +235,7 @@ async function askTutor() {
 
             <h2>
 
-                🤖 AI Tutor is thinking...
+                 AI Tutor is thinking...
 
             </h2>
 
@@ -367,7 +367,7 @@ async function askTutor() {
 
                     <h2>
 
-                        🤖 AI Tutor Response
+                         AI Tutor Response
 
                     </h2>
 
@@ -584,4 +584,4 @@ function escapeHTML(text) {
 </body>
 
 </html>
-````
+

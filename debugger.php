@@ -1,4 +1,3 @@
-````php
 <?php
 
 require_once "includes/auth.php";
@@ -87,7 +86,7 @@ require_once "includes/auth.php";
             type="button"
             onclick="debugCode()"
         >
-            🔍 Debug Code
+             Debug Code
         </button>
 
 
@@ -142,7 +141,7 @@ async function debugCode() {
 
     result.innerHTML = `
 
-        <h2>🤖 AI is analyzing your code...</h2>
+        <h2>AI is analyzing your code...</h2>
 
         <p>
             Please wait while the AI checks your code.
@@ -335,4 +334,4 @@ function escapeHTML(text) {
 </body>
 
 </html>
-````
+

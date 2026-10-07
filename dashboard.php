@@ -67,7 +67,7 @@ require_once "includes/auth.php";
 
             <a href="ai_tutor.php" class="dashboard-card">
 
-    <h3>🤖 AI Programming Tutor</h3>
+    <h3> AI Programming Tutor</h3>
 
     <p>
         Ask questions and get programming explanations
