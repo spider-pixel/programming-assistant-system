@@ -234,7 +234,7 @@ async function debugCode() {
 
         result.innerHTML = `
 
-            <h2>🤖 AI Debugging Analysis</h2>
+            <h2> AI Debugging Analysis</h2>
 
             <div class="ai-response">
 
