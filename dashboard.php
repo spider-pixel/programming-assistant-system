@@ -5,7 +5,6 @@ require_once "includes/auth.php";
 ?>
 
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -24,15 +23,15 @@ require_once "includes/auth.php";
 
     <a href="dashboard.php">Dashboard</a>
 
-    <a href="#">Lessons</a>
+    <a href="lessons.php">Lessons</a>
 
-    <a href="#">AI Tutor</a>
+    <a href="ai_tutor.php">AI Tutor</a>
 
     <a href="debugger.php">Debugger</a>
 
-    <a href="#">Quiz</a>
+    <a href="quiz.php">Quiz</a>
 
-    <a href="#">Progress</a>
+    <a href="progress.php">Track Progress</a>
 
     <a href="logout.php">Logout</a>
 
@@ -49,66 +48,89 @@ require_once "includes/auth.php";
         Welcome to your AI-powered programming learning assistant.
     </p>
 
+
+    <!-- Programming Lessons -->
+
     <div class="card">
 
-    <h3>Programming Lessons</h3>
+        <h3>Programming Lessons</h3>
 
-    <p>
-        Learn programming concepts and examples.
-    </p>
+        <p>
+            Learn programming concepts and examples.
+        </p>
 
-    <a href="lessons.php">
-        Start Learning
-    </a>
+        <a href="lessons.php">
+            Start Learning
+        </a>
 
-</div>
+    </div>
 
-        <div class="card">
 
-            <a href="ai_tutor.php" class="dashboard-card">
+    <!-- AI Programming Tutor -->
 
-    <h3> AI Programming Tutor</h3>
+    <div class="card">
 
-    <p>
-        Ask questions and get programming explanations
-        from your AI Tutor.
-    </p>
+        <h3>AI Programming Tutor</h3>
 
-</a>
+        <p>
+            Ask questions and get programming explanations
+            from your AI Tutor.
+        </p>
 
-        <div class="card">
+        <a href="ai_tutor.php" class="dashboard-card">
+            Open AI Tutor
+        </a>
 
-    <h3>Code Debugger</h3>
+    </div>
 
-    <p>
-        Analyze programming code and identify errors.
-    </p>
 
-    <a href="debugger.php">
-        Open Code Debugger
-    </a>
+    <!-- Code Debugger -->
 
-</div>
+    <div class="card">
 
-        <div class="card">
+        <h3>Code Debugger</h3>
 
-            <h3>Programming Quiz</h3>
+        <p>
+            Analyze programming code and identify errors.
+        </p>
 
-            <p>
-                Test your programming knowledge.
-            </p>
+        <a href="debugger.php">
+            Open Code Debugger
+        </a>
 
-        </div>
+    </div>
 
-        <div class="card">
 
-            <h3>Learning Progress</h3>
+    <!-- Programming Quiz -->
 
-            <p>
-                Monitor your programming learning progress.
-            </p>
+    <div class="card">
 
-        </div>
+        <h3>Programming Quiz</h3>
+
+        <p>
+            Test your programming knowledge.
+        </p>
+
+        <a href="quiz.php">
+            Start Quiz
+        </a>
+
+    </div>
+
+
+    <!-- Learning Progress -->
+
+    <div class="card">
+
+        <h3>Learning Progress</h3>
+
+        <p>
+            Monitor your programming learning progress.
+        </p>
+
+        <a href="progress.php">
+            View My Progress
+        </a>
 
     </div>
 
@@ -117,3 +139,4 @@ require_once "includes/auth.php";
 </body>
 
 </html>
+
