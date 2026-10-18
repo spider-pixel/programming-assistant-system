@@ -12,30 +12,30 @@ require_once "includes/auth.php";
     <title>Student Dashboard</title>
 
     <link rel="stylesheet" href="css/style.css">
-
+<script src="theme.js"></script>
 </head>
 
 <body>
 
-<nav>
 
+<nav>
     <h2>Programming Learning Assistant</h2>
 
     <a href="dashboard.php">Dashboard</a>
-
     <a href="lessons.php">Lessons</a>
-
     <a href="ai_tutor.php">AI Tutor</a>
-
     <a href="debugger.php">Debugger</a>
-
     <a href="quiz.php">Quiz</a>
-
     <a href="progress.php">Track Progress</a>
 
-    <a href="logout.php">Logout</a>
+    <button type="button" class="theme-toggle" id="themeToggle"
+            aria-label="Switch to dark mode">
+         Dark Mode
+    </button>
 
+    <a href="logout.php">Logout</a>
 </nav>
+
 
 <main>
 
